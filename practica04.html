@@ -31,16 +31,16 @@
       const app = document.getElementById("app");
       const url = "https://picsum.photos/id/";
       const size = "/200/200";
-      const Picture = (parametros) => {
+      const Picture = (parametros, nombre) => {
         let src = url + parametros + size;
         console.log(src);
         return `<figure>
           <img src="${src}" />
-          <figcaption></figcaption>
+          <figcaption>${nombre}</figcaption>
         </figure>`;
       };
-      app.innerHTML = Picture("10");
-      app.innerHTML += Picture("21");
+      app.innerHTML = Picture("10", "john");
+      app.innerHTML += Picture("21","jane");
     </script>
   </body>
 </html>
