@@ -1,12 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-//import App from './App.jsx'
-import './index.css'
-import MiFieldStet from './Mifieldset.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+//import App from "./App.jsx";
+//import "./index.css";
+import MiFieldset from "./MiFieldset.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-    <MiFieldStet titulo = "datos personales" txt1="nombre" txt2="Password"/>
-  </React.StrictMode>,
-)
+    {/*<App />*/}
+    <MiFieldset titulo="Datos personales" text1="Nombre" text2="Password" />
+  </React.StrictMode>
+);
